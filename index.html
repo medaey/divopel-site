@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divopel</title>
+
+    <!-- Favicon avec fond transparent -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <!-- Styles principaux -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A;
+            color: #E5E7EB;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2563EB;
+            padding: 1rem;
+        }
+
+        /* Banner adaptative */
+        header img.banner {
+            width: 100%;
+            max-width: 1536px; /* largeur native de ta banner */
+            height: auto;
+            object-fit: contain;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        /* Logo alongé */
+        .logo {
+            max-width: 400px;
+            width: 60%;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #174bbd;
+        }
+
+        footer {
+            background-color: #0B0B0B;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER avec banner -->
+    <header>
+        <img src="assets/images/banner.png" alt="Divopel Banner" class="banner">
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Logo alongé -->
+        <img src="assets/images/logo.png" alt="Divopel Logo" class="logo">
+
+        <h1>Bienvenue sur Divopel</h1>
+        <p>
+            Divopel est une entreprise spécialisée dans les solutions technologiques et l’optimisation des systèmes informatiques. 
+            Nous combinons puissance, sécurité et innovation pour vos projets numériques.
+        </p>
+        <a class="cta-button" href="https://github.com">Découvrir nos projets</a>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 Divopel. Tous droits réservés.
+    </footer>
+
+</body>
+</html>
